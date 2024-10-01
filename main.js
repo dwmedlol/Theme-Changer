@@ -1,4 +1,3 @@
-import './style.css'
 
 document.querySelector('#app').innerHTML = `
 <h1>Change Color Page</h1>
@@ -6,8 +5,8 @@ document.querySelector('#app').innerHTML = `
 <div class="palette-section">
     <h2>Select a Color Palette</h2>
     <button id="light-mode" class="palette-button">Light Mode</button>
-    <button id="dark-mode" class="palette-button">Dark Mode</button>
-    <button id="sepia-mode" class="palette-button">Sepia</button>
+    <button id="dark-mode" class="palette-button dark">Dark Mode</button>
+    <button id="sepia-mode" class="palette-button light">Sepia</button>
 </div>
 
 <div class="custom-section">

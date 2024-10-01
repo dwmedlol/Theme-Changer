@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Change Color Page",
+    "version": "1.0.0",
+    "description": "A Chrome extension that changes the colors of web pages.",
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "Change Page Colors"
+    },
+    "permissions": [
+      "activeTab",
+      "tabs"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*/*", "http://*/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
+  

@@ -5,6 +5,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         content: 'main.js', // Ensure this path matches your content script location
+        background: 'src/background.js'
       },
       output: {
         entryFileNames: '[name].js',

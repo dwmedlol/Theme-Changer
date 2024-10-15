@@ -9,15 +9,20 @@
     },
     "permissions": [
       "activeTab",
-      "tabs"
+      "tabs",
+      "scripting"
     ],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ],
+
     "background": {
       "service_worker": "background.js"
     },
     "content_scripts": [
       {
-        "matches": ["https://*/*", "http://*/*"],
-        "js": ["content.js"],
+        "matches": ["<all_urls>"],
         "css": ["style.css"]
       }
     ]
